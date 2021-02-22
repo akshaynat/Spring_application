@@ -1,10 +1,8 @@
 package com.example.spring_session.controller;
 
 import com.example.spring_session.dto.ProductRequestDTO;
-import com.example.spring_session.dto.ProductResponseDTO;
 import com.example.spring_session.dto.SearchResponseDTO;
 import com.example.spring_session.service.SearchService;
-import com.example.spring_session.service.impl.SearchServiceList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
