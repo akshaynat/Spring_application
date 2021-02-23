@@ -1,19 +1,23 @@
 package com.example.spring_session.dto;
 
+import java.util.List;
+
 public class ProductResponseDTO {
     private boolean inStock;
     private int salePrice;
     private String description;
     private String title;
-    private String location;
 
-    public String getLocation() {
+    public List<String> getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(List<String> location) {
         this.location = location;
     }
+
+    private List<String> location;
+
 
     public boolean isInStock() {
         return inStock;
@@ -54,6 +58,7 @@ public class ProductResponseDTO {
                 ", salePrice=" + salePrice +
                 ", description='" + description + '\'' +
                 ", title='" + title + '\'' +
+                ", location=" + location.toArray() +
                 '}';
     }
 }
