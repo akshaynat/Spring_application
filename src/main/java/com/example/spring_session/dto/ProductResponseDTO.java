@@ -5,6 +5,15 @@ public class ProductResponseDTO {
     private int salePrice;
     private String description;
     private String title;
+    private String location;
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
     public boolean isInStock() {
         return inStock;

@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
-@FeignClient(name="search-client", url="http://10.177.68.40:8983/")
+@FeignClient(name="search-client", url="http://10.177.68.77:8983/")
 public interface SearchClient {
     /**
      * API Ref.
-     * http://10.177.68.40:8983/solr/productCollection/select?q=samsung
+     * http://10.177.68.77:8983/solr/productCollection/select?q=samsung
+     * 10.177.68.77:8983
      */
 
     @RequestMapping(method = RequestMethod.GET, path = "solr/productCollection/select")

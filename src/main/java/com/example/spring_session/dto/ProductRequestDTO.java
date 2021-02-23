@@ -2,13 +2,22 @@ package com.example.spring_session.dto;
 
 public class ProductRequestDTO {
 
-    private String search_term;
+    private String searchTerm;
+    private String stockLocation;
 
-    public String getSearch_term() {
-        return search_term;
+    public String getStockLocation() {
+        return stockLocation;
     }
 
-    public void setSearch_term(String search_term) {
-        this.search_term = search_term;
+    public void setStockLocation(String stockLocation) {
+        this.stockLocation = stockLocation;
+    }
+
+    public String getSearchTerm() {
+        return searchTerm;
+    }
+
+    public void setSearchTerm(String searchTerm) {
+        this.searchTerm = searchTerm;
     }
 }
