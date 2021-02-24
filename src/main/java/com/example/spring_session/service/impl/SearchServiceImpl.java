@@ -43,7 +43,7 @@ public class SearchServiceImpl implements SearchService {
                 else
                     myProductDetails[i].setInStock(false);
                 myProductDetails[i].setTitle((String) products.get(i).get("name"));
-                myProductDetails[i].setSalePrice((int)((double) products.get(i).get("salePrice")));
+//                myProductDetails[i].setSalePrice((int)((double) products.get(i).get("salePrice")));
                 myProductDetails[i].setDescription((String) products.get(i).get("description"));
                 myProductDetails[i].setLocation((List<String>)(products.get(i).get("stockLocation")));
             }
@@ -67,7 +67,7 @@ public class SearchServiceImpl implements SearchService {
                 else
                     myProductDetailsLoc[i].setInStock(false);
                 myProductDetailsLoc[i].setTitle((String) productsLoc.get(i).get("name"));
-                myProductDetailsLoc[i].setSalePrice((int)((double) productsLoc.get(i).get("salePrice")));
+//                myProductDetailsLoc[i].setSalePrice((int)((double) productsLoc.get(i).get("salePrice")));
                 myProductDetailsLoc[i].setDescription((String) productsLoc.get(i).get("description"));
                 myProductDetailsLoc[i].setLocation((List<String>)(productsLoc.get(i).get("stockLocation")));
             }
